@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Merriweather:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(34, 31, 31);
+}
+
+.header1 {
+margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-family: 'DM Serif Display', serif;
+  
+  animation: header1;
+  animation-duration: 3s;
+    position: relative;
+    
+}
+
+@keyframes header1 {
+
+    0% {left: -500px;}
+    100% {left: 0}
+    
+
+
+}
+
+.header2 
+{
+    opacity: 0;
+    margin: auto;
+      width: 50%;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      font-family: 'DM Serif Display', serif;
+      
+      animation: header2;
+      animation-duration: 4s;
+        position: relative;
+        animation-delay: 8s;
+        animation-fill-mode: forwards;
+    }
+    
+
+    @keyframes header2 {
+
+        0% {right: -500px;}
+        100% {right: 0px}
+        0% {opacity: 0;} 
+        100% {opacity: 1;}
+        
+        
+    }
+
+
+
+
+.picture{
+
+    opacity: 0;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    animation: pictureAni;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+
+}
+
+@keyframes pictureAni {
+    0% {opacity: 0;} 
+    100% {opacity: 1;}
+    
+}
+
+
+.img {
+    width: 300px;
+    
+    
+    
+}
+
+.ingridients {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    
+    width: 20%;
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather', serif;
+    
+}
+
+.ingridients-table {
+    opacity: 0;
+    margin: 0 auto;
+    animation: table;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+    position: relative;
+    border: 2px solid white;
+    
+    
+
+}
+@keyframes table {
+    0% {top: -250px;}
+    100% {top: 0}
+    0% {opacity: 0;} 
+        100% {opacity: 1;}
+
+    
+}
+
+
+.ingridients-table td {
+
+    padding-left: 30px;
+   
+}
+
+.ingridients-table th {
+
+    padding-left: 30px;
+}
+.instructions {
+   
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+
+
+.instructions li {
+    padding-bottom: 20px;
+    animation: instr;
+    opacity: 0;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+
+
+@keyframes instr {
+    0% {bottom: -250px;}
+    100% {bottom: 0}
+    0% {opacity: 0;} 
+        100% {opacity: 1;}
+
+    
+}
+.link {
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding-bottom: 10px;
+}
+
+footer {color: white;}
